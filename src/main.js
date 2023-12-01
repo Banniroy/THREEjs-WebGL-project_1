@@ -12,7 +12,7 @@ const initApp = () => {
    const canvas = document.querySelector('.webgl')
 
    const textureLoader = new THREE.TextureLoader
-   const matcapTexture = textureLoader.load('../matcaps/1.png')
+   const matcapTexture = textureLoader.load('../static/matcaps/1.png')
 
    /**
     * Scene
@@ -20,8 +20,9 @@ const initApp = () => {
    const Scene = new THREE.Scene()
 
    const fontLoader = new FontLoader()
+
   fontLoader.load(
-   '../node_modules/three/examples/fonts/helvetiker_regular.typeface.json',
+   '../static/fonts/helvetiker_regular.typeface.json',
    (font) => {
       const textGeometry = new TextGeometry('Ajibade Abdulmatin \nFrontend Developer', {
          font: font,
