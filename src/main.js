@@ -12,7 +12,7 @@ const initApp = () => {
    const canvas = document.querySelector('.webgl')
 
    const textureLoader = new THREE.TextureLoader
-   const matcapTexture = textureLoader.load('matcaps/1.png')
+   const matcapTexture = textureLoader.load('1.png')
 
    /**
     * Scene
